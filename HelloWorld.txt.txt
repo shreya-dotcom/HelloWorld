@@ -1,19 +1,21 @@
-package com.edureka;
+package com.edureka;        //creating package com.edureka
 
 public class HelloWorld {
 
-    public void test (){
+    public void test (){                         //non static method
         System.out.println("Non Static Method ..");
     }
 
-    public static void static_test (){
+    public static void static_test (){          //static method
         System.out.println("Static Method ..");
     }
 
-    public static void main(String[] args){
-        HelloWorld obj = new HelloWorld();
+    public static void main(String[] args){    //main method to get strating point to code to run
+    
+        HelloWorld obj = new HelloWorld();     //creating object of the class HelloWorld
         System.out.println("Hello World !!");
-        obj.test();
-        static_test();
+        
+        obj.test();                        //Accessing non static method with the help of object
+        static_test();                    //Accessing static method - doesn't require object
     }
 }
